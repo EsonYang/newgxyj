@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/shopcar.css">
+
+
+
+    <title>供销e家商城</title>
+</head>
+
+<body>
+    <!-- ，，，，，，，，，，，，，，，，，，，，顶部开始，，，，，，，，，，，，，，，，，，，，，，，，，， -->
+    <div id="head_top">
+        <div id="head_nav">
+            <div id="city_list" class="_oBox">
+                <i id="shows"></i>
+                <a>全国</a>
+                <span class="navicon"></span>
+                <div class="position-city" style="display: none;" id="position-city">
+                    <span class="wrong11" id="close"></span>
+                    <div class="container-header clear">
+                        <div class="container-header-right" id="container-header-right">
+                            <div class="input-contaner">
+                                <span class="search">地区搜索：</span>
+                                <input id="searchKeyword" type="" name="" value="请选择输入地区中文及英文字母" onblur="if (this.value ==''){this.value ='请选择输入地区中文及英文字母'}" onfocus="if (value =='请选择输入地区中文及英文字母'){value=''}" oninput="searchKeyword()" onpropertychange="searchKeyword()">
+                            </div>
+                            <ul class="search-suggest" style="display:none;" id="searchKeywork">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-midlle clear" style="border-bottom:1px solid #ccc;">
+                        <span class="recond">推荐地区：</span>
+                        <div class="allcitys" id="allcitys">
+                            <a id="allcity" class="activecolor">全国</a>
+                        </div>
+                    </div>
+                    <div class="container-midlle clear" style="border-bottom:1px solid #ccc;">
+                        <span class="recond">最近访问：</span>
+
+                    </div>
+                    <div class="container-midlle container-bottom clear" id="showcityUl">
+                        <div class="list-item" id="liId0"><span class="recond word word-active">A</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="231102">爱辉区</a><a herf="javascript:;" name="654300">阿勒泰地区</a><a herf="javascript:;" name="360829">安福县</a><a herf="javascript:;" name="430923">安化县</a><a herf="javascript:;" name="340000">安徽</a>
+                                <a herf="javascript:;" name="360123">安义县</a><a herf="javascript:;" name="360726">安远县</a><a herf="javascript:;" name="141026">安泽县</a></div>
+                        </div>
+                        <div class="list-item" id="liId1"><span class="recond word word-active">B</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="220600">白山市</a><a herf="javascript:;" name="610527">白水县</a><a herf="javascript:;" name="620402">白银区</a><a herf="javascript:;" name="120115">宝坻区</a><a herf="javascript:;" name="610300">宝鸡市</a>
+                                <a herf="javascript:;" name="420626">保康县</a><a herf="javascript:;" name="511900">巴中市</a><a herf="javascript:;" name="610427">彬县</a><a herf="javascript:;" name="652700">博尔塔拉蒙古自治州</a></div>
+                        </div>
+                        <div class="list-item" id="liId2"><span class="recond word word-active">C</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="654022">察布查尔锡伯自治县</a><a herf="javascript:;" name="430700">常德市</a><a herf="javascript:;" name="350821">长汀县</a><a herf="javascript:;" name="410728">长垣县</a><a herf="javascript:;" name="211300">朝阳市</a>
+                                <a herf="javascript:;" name="150400">赤峰市</a><a herf="javascript:;" name="509999">重庆</a><a herf="javascript:;" name="360725">崇义县</a></div>
+                        </div>
+                        <div class="list-item" id="liId3"><span class="recond word word-active">D</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="611022">丹凤县</a><a herf="javascript:;" name="420922">大悟县</a><a herf="javascript:;" name="511700">达州市</a><a herf="javascript:;" name="350526">德化县</a><a herf="javascript:;" name="632802">德令哈市</a>
+                                <a herf="javascript:;" name="410185">登封市</a><a herf="javascript:;" name="411381">邓州市</a><a herf="javascript:;" name="361181">德兴市</a><a herf="javascript:;" name="621100">定西市</a><a herf="javascript:;" name="220502">东昌区</a>
+                                <a herf="javascript:;" name="220421">东丰县</a>
+                            </div>
+                        </div>
+                        <div class="list-item" id="liId4"><span class="recond word word-active">E</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="422801">恩施市</a><a herf="javascript:;" name="150724">鄂温克族自治旗</a></div>
+                        </div>
+                        <div class="list-item" id="liId5"><span class="recond word word-active">F</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="410926">范县</a><a herf="javascript:;" name="371325">费县</a><a herf="javascript:;" name="433123">凤凰县</a><a herf="javascript:;" name="451223">凤山县</a><a herf="javascript:;" name="141182">汾阳市</a><a herf="javascript:;"
+                                    name="610730">佛坪县</a><a herf="javascript:;" name="350982">福鼎市</a><a herf="javascript:;" name="610822">府谷县</a><a herf="javascript:;" name="350000">福建</a><a herf="javascript:;" name="220621">抚松县</a></div>
+                        </div>
+                        <div class="list-item" id="liId6"><span class="recond word word-active">G</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="620000">甘肃</a><a herf="javascript:;" name="130182">藁城市</a><a herf="javascript:;" name="150785">根河市</a><a herf="javascript:;" name="511600">广安市</a><a herf="javascript:;" name="361030">广昌县</a><a herf="javascript:;"
+                                    name="440000">广东</a><a herf="javascript:;" name="431027">桂东县</a><a herf="javascript:;" name="450881">桂平市</a></div>
+                        </div>
+                        <div class="list-item" id="liId7"><span class="recond word word-active">H</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="652201">哈密市</a><a herf="javascript:;" name="610902">汉滨区</a><a herf="javascript:;" name="610581">韩城市</a><a herf="javascript:;" name="130000">河北</a><a herf="javascript:;" name="371312">河东区</a><a herf="javascript:;"
+                                    name="652827">和静县</a><a herf="javascript:;" name="140882">河津市</a><a herf="javascript:;" name="410000">河南</a><a herf="javascript:;" name="610524">合阳县</a><a herf="javascript:;" name="532529">红河县</a><a herf="javascript:;"
+                                    name="431200">怀化市</a>
+                                <a herf="javascript:;" name="110116">怀柔区</a><a herf="javascript:;" name="370211">黄岛区</a><a herf="javascript:;" name="130983">黄骅市</a><a herf="javascript:;" name="430623">华容县</a><a herf="javascript:;" name="420000">湖北</a>
+                                <a herf="javascript:;" name="360733">会昌县</a>
+                                <a herf="javascript:;" name="430000">湖南</a><a herf="javascript:;" name="654023">霍城县</a><a herf="javascript:;" name="341522">霍邱县</a></div>
+                        </div>
+                        <div class="list-item" id="liId8"><span class="recond word word-active">J</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="511304">嘉陵区</a><a herf="javascript:;" name="320000">江苏</a><a herf="javascript:;" name="360000">江西</a><a herf="javascript:;" name="220582">集安市</a><a herf="javascript:;" name="220000">吉林</a><a herf="javascript:;"
+                                    name="341502">金安区</a><a herf="javascript:;" name="620300">金昌市</a><a herf="javascript:;" name="360925">靖安县</a><a herf="javascript:;" name="610824">靖边县</a><a herf="javascript:;" name="360881">井冈山市</a><a herf="javascript:;"
+                                    name="420800">荆门市</a>
+                                <a herf="javascript:;" name="610423">泾阳县</a><a herf="javascript:;" name="350582">晋江市</a><a herf="javascript:;" name="341524">金寨县</a><a herf="javascript:;" name="360400">九江市</a><a herf="javascript:;" name="131181">冀州市</a></div>
+                        </div>
+                        <div class="list-item" id="liId9"><span class="recond word word-active">L</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="410225">兰考县</a><a herf="javascript:;" name="130225">乐亭县</a><a herf="javascript:;" name="440881">廉江市</a><a herf="javascript:;" name="210000">辽宁</a><a herf="javascript:;" name="211000">辽阳市</a><a herf="javascript:;"
+                                    name="211021">辽阳县</a><a herf="javascript:;" name="361022">黎川县</a><a herf="javascript:;" name="450721">灵山县</a><a herf="javascript:;" name="220322">梨树县</a><a herf="javascript:;" name="4690216">龙河镇</a><a herf="javascript:;"
+                                    name="360727">龙南县</a>
+                                <a herf="javascript:;" name="130824">滦平县</a><a herf="javascript:;" name="411100">漯河市</a><a herf="javascript:;" name="653224">洛浦县</a><a herf="javascript:;" name="350123">罗源县</a><a herf="javascript:;" name="360323">芦溪县</a>
+                                <a herf="javascript:;" name="411628">鹿邑县</a>
+                            </div>
+                        </div>
+                        <div class="list-item" id="liId10"><span class="recond word word-active">M</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="420302">茅箭区</a><a herf="javascript:;" name="610725">勉县</a><a herf="javascript:;" name="150722">莫力达瓦达斡尔族自治旗</a></div>
+                        </div>
+                        <div class="list-item" id="liId11"><span class="recond word word-active">N</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="360100">南昌市</a><a herf="javascript:;" name="361021">南城县</a><a herf="javascript:;" name="361023">南丰县</a><a herf="javascript:;" name="360782">南康市</a><a herf="javascript:;" name="430921">南县</a><a herf="javascript:;"
+                                    name="150000">内蒙古</a><a herf="javascript:;" name="360730">宁都县</a><a herf="javascript:;" name="120221">宁河区</a><a herf="javascript:;" name="640000">宁夏</a></div>
+                        </div>
+                        <div class="list-item" id="liId12"><span class="recond word word-active">P</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="360430">彭泽县</a><a herf="javascript:;" name="140321">平定县</a><a herf="javascript:;" name="110117">平谷区</a><a herf="javascript:;" name="140829">平陆县</a><a herf="javascript:;" name="130532">平乡县</a>
+                                <a herf="javascript:;" name="140728">平遥县</a>
+                            </div>
+                        </div>
+                        <div class="list-item" id="liId13"><span class="recond word word-active">Q</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="500114">黔江区</a><a herf="javascript:;" name="340824">潜山县</a><a herf="javascript:;" name="130227">迁西县</a><a herf="javascript:;" name="430426">祁东县</a><a herf="javascript:;" name="410922">清丰县</a>
+                                <a herf="javascript:;" name="630000">青海</a><a herf="javascript:;" name="130534">清河县</a><a herf="javascript:;" name="410882">沁阳市</a><a herf="javascript:;" name="410221">杞县</a><a herf="javascript:;" name="360729">全南县</a></div>
+                        </div>
+                        <div class="list-item" id="liId14"><span class="recond word word-active">R</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="131124">饶阳县</a><a herf="javascript:;" name="360781">瑞金市</a></div>
+                        </div>
+                        <div class="list-item" id="liId15"><span class="recond word word-active">S</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="411200">三门峡市</a><a herf="javascript:;" name="653125">莎车县</a><a herf="javascript:;" name="370000">山东</a><a herf="javascript:;" name="360923">上高县</a><a herf="javascript:;" name="350823">上杭县</a>
+                                <a herf="javascript:;" name="360322">上栗县</a><a herf="javascript:;" name="611023">商南县</a><a herf="javascript:;" name="361100">上饶市</a><a herf="javascript:;" name="361121">上饶县</a><a herf="javascript:;" name="360724">上犹县</a>
+                                <a herf="javascript:;" name="330682">上虞区</a>
+                                <a herf="javascript:;" name="611002">商州区</a><a herf="javascript:;" name="140000">山西</a><a herf="javascript:;" name="610000">陕西</a><a herf="javascript:;" name="430523">邵阳县</a><a herf="javascript:;" name="210100">沈阳市</a>
+                                <a herf="javascript:;" name="130100">石家庄市</a>
+                                <a herf="javascript:;" name="430726">石门县</a><a herf="javascript:;" name="220501">市辖区</a><a herf="javascript:;" name="510000">四川</a><a herf="javascript:;" name="220300">四平市</a><a herf="javascript:;" name="341324">泗县</a>
+                                <a herf="javascript:;" name="360827">遂川县</a>
+                                <a herf="javascript:;" name="411403">睢阳区</a><a herf="javascript:;" name="211421">绥中县</a><a herf="javascript:;" name="321311">宿豫区</a><a herf="javascript:;" name="341300">宿州市</a></div>
+                        </div>
+                        <div class="list-item" id="liId16"><span class="recond word word-active">T</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="140726">太谷县</a><a herf="javascript:;" name="410927">台前县</a><a herf="javascript:;" name="130200">唐山市</a><a herf="javascript:;" name="410523">汤阴县</a><a herf="javascript:;" name="430922">桃江县</a>
+                                <a herf="javascript:;" name="654027">特克斯县</a><a herf="javascript:;" name="341181">天长市</a><a herf="javascript:;" name="129999">天津</a><a herf="javascript:;" name="610522">潼关县</a><a herf="javascript:;" name="340700">铜陵市</a>
+                                <a herf="javascript:;" name="652100">吐鲁番地区</a>
+                            </div>
+                        </div>
+                        <div class="list-item" id="liId17"><span class="recond word word-active">W</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="361129">万年县</a><a herf="javascript:;" name="410781">卫辉市</a><a herf="javascript:;" name="130533">威县</a><a herf="javascript:;" name="410481">舞钢市</a><a herf="javascript:;" name="430581">武冈市</a><a herf="javascript:;"
+                                    name="360423">武宁县</a><a herf="javascript:;" name="654202">乌苏市</a><a herf="javascript:;" name="150821">五原县</a><a herf="javascript:;" name="361130">婺源县</a></div>
+                        </div>
+                        <div class="list-item" id="liId18"><span class="recond word word-active">X</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="141023">襄汾县</a><a herf="javascript:;" name="420600">襄阳市</a><a herf="javascript:;" name="350322">仙游县</a><a herf="javascript:;" name="341322">萧县</a><a herf="javascript:;" name="410323">新安县</a><a herf="javascript:;"
+                                    name="150727">新巴尔虎右旗</a><a herf="javascript:;" name="360722">信丰县</a><a herf="javascript:;" name="360824">新干县</a><a herf="javascript:;" name="610481">兴平市</a><a herf="javascript:;" name="130125">行唐县</a><a herf="javascript:;"
+                                    name="360427">星子县</a><a herf="javascript:;" name="650000">新疆兵团</a><a herf="javascript:;" name="950000">新疆自治区</a><a herf="javascript:;" name="210181">新民市</a><a herf="javascript:;" name="430528">新宁县</a><a herf="javascript:;"
+                                    name="411500">信阳市</a><a herf="javascript:;" name="360424">修水县</a><a herf="javascript:;" name="540000">西藏</a><a herf="javascript:;" name="360734">寻乌县</a><a herf="javascript:;" name="610429">旬邑县</a><a herf="javascript:;"
+                                    name="320300">徐州市</a></div>
+                        </div>
+                        <div class="list-item" id="liId19"><span class="recond word word-active">Y</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="511800">雅安市</a><a herf="javascript:;" name="610622">延川县</a><a herf="javascript:;" name="410329">伊川县</a><a herf="javascript:;" name="360900">宜春市</a><a herf="javascript:;" name="420506">夷陵区</a>
+                                <a herf="javascript:;" name="420981">应城市</a><a herf="javascript:;" name="421124">英山县</a><a herf="javascript:;" name="371323">沂水县</a><a herf="javascript:;" name="433127">永顺县</a><a herf="javascript:;" name="341503">裕安区</a>
+                                <a herf="javascript:;" name="411425">虞城县</a>
+                                <a herf="javascript:;" name="360622">余江县</a><a herf="javascript:;" name="371725">郓城县</a><a herf="javascript:;" name="361123">玉山县</a><a herf="javascript:;" name="130229">玉田县</a><a herf="javascript:;" name="530400">玉溪市</a></div>
+                        </div>
+                        <div class="list-item" id="liId20"><span class="recond word word-active">Z</span>
+                            <div class="allcitys allcitys-cit "><a herf="javascript:;" name="420683">枣阳市</a><a herf="javascript:;" name="360702">章贡区</a><a herf="javascript:;" name="350881">漳平市</a><a herf="javascript:;" name="350600">漳州市</a><a herf="javascript:;" name="371624">沾化县</a>
+                                <a herf="javascript:;" name="370685">招远市</a><a herf="javascript:;" name="321100">镇江市</a><a herf="javascript:;" name="420527">秭归县</a><a herf="javascript:;" name="520300">遵义市</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul id="login">
+                <li id="uesr_info"><a href="land.html" class="a_color">马上登录</a></li>
+                <li class="li_linespace">|</li>
+                <li id="zc"><a href="register.html" class="a_color">注册</a></li>
+                <li><a href="shopcar.html" id="car_cont" class="shop_car">
+                购物车
+                    <i class="i_shopcar"></i>
+                    <span id="number" class="a_color">0</span>
+                    </a>件
+                </li>
+                <li class="li_linespace">|</li>
+                <li><a href="javascript:;">我的商城</a></li>
+                <li class="li_linespace">|</li>
+                <li><a href="javascript:;">我的订单</a></li>
+                <li class="li_linespace">|</li>
+                <li id="customer_service" class="_oBox">
+                    <a href="javascript:;">客户服务
+                    <i class="navicon"></i></a>
+                    <div class="kffwon" id="kffwon">
+                        <a href="javascript:;">在线客服</a>
+                        <a href="javascript:;">售后保障</a>
+                        <a href="javascript:;">热点问题</a>
+                    </div>
+
+                </li>
+                <li class="li_linespace">|</li>
+                <li id="shopNav" class="_oBox">
+                    <a href="" id="shop_center">网站导航<i class="navicon"></i> </a>
+                    <div class="shoper downgx" id="shoper">
+                        <ul class="shoplist clear">
+                            <li class="farmproduct">
+                                <h3>农产品商城</h3>
+                                <nav class="shopcontentlast clear">
+                                    <a href=""> 肉禽蛋奶 </a>
+                                    <a href=""> 米面杂粮 </a>
+                                    <a href=""> 熟食面点 </a>
+                                    <a href=""> 方便速食 </a>
+                                    <a href=""> 厨房调味 </a>
+                                    <a href=""> 腊味干货 </a>
+                                    <a href=""> 饮料冲调 </a>
+                                    <a href=""> 休闲零食 </a>
+                                    <a href=""> 营养保健 </a>
+                                    <a href=""> 中外名酒 </a>
+                                    <a href=""> 海鲜水产 </a>
+                                    <a href=""> 时令鲜蔬 </a>
+                                    <a href=""> 新鲜水果 </a>
+                                    <a href=""> 四季茗茶 </a>
+                                </nav>
+                            </li>
+                            <li class="online">
+                                <h3>货郎在线</h3>
+                                <nav class="shopcontentlast clear">
+                                    <a href=""> 生活日用 </a>
+                                    <a href=""> 精品家纺 </a>
+                                    <a href=""> 纸品湿巾 </a>
+                                    <a href=""> 厨具日用 </a>
+                                    <a href=""> 面部护理 </a>
+                                    <a href=""> 洗发护发 </a>
+                                    <a href=""> 香水彩妆 </a>
+                                    <a href=""> 身体护肤 </a>
+                                    <a href=""> 家庭清洁 </a>
+                                    <a href=""> 口腔护理 </a>
+                                    <a href=""> 时尚女装 </a>
+                                    <a href=""> 精品男装 </a>
+                                    <a href=""> 鲜花礼品 </a>
+                                    <a href=""> 家用电器 </a>
+                                    <a href=""> 潮流鞋靴 </a>
+                                    <a href=""> 电脑外设 </a>
+                                    <a href=""> 精品箱包 </a>
+                                    <a href=""> 办公用品 </a>
+                                    <a href=""> 袜子配饰 </a>
+                                    <a href=""> 母婴护理 </a>
+                                    <a href=""> 汽车用品 </a>
+                                    <a href=""> 供销e购卡 </a>
+                                </nav>
+                            </li>
+                            <li class="farmshop">
+                                <h3>农资商城</h3>
+                                <nav class="shopcontent clear">
+                                    <a href=""> 肥料 </a>
+                                    <a href=""> 农药 </a>
+                                    <a href=""> 农机具 </a>
+                                    <a href=""> 土地 </a>
+                                    <a href=""> 苗木 </a>
+                                    <a href="" style="margin-right: 0;"> 种子 </a>
+                                    <a href=""> 农业服务 </a>
+                                </nav>
+                            </li>
+                            <li class="farmlife">
+                                <h3>生活服务</h3>
+                                <nav class="shopcontent clear">
+                                    <a href="" target="_blank">缴水费</a>
+                                    <a href="" target="_blank">缴电费</a>
+                                    <a href="" target="_blank">煤气费</a>
+                                    <a href="" target="_blank">手机充值</a>
+                                </nav>
+                            </li>
+                            <li class="service">
+                                <h3>服务指南</h3>
+                                <nav class="shopcontent clear">
+                                    <a href=""> 初次到访 </a>
+                                    <a href=""> 购物流程 </a>
+                                    <a href=""> 关于我们 </a>
+                                    <a href=""> 配送标准 </a>
+                                    <a href=""> 发票制度 </a>
+                                    <a href=""> 签收验货 </a>
+                                    <a href=""> 退货流程 </a>
+                                    <a href=""> 退换货规则 </a>
+                                    <a href=""> 地方平台搭建 </a>
+                                    <a href=""> 商户入驻 </a>
+                                    <a href=""> 入驻流程 </a>
+                                    <a href=""> 入驻须知 </a>
+                                    <a href=""> 禁售商品规则 </a>
+                                    <a href="" id="wangdian"> 网点申请 </a>
+                                </nav>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="li_linespace">|</li>
+                <li><a href="">供销e通</a></li>
+                <li class="li_linespace">|</li>
+                <li><a href="">供销e批</a></li>
+                <li class="li_linespace">|</li>
+                <li><a href="">农资衣服</a></li>
+                <li class="li_linespace">|</li>
+                <li id="phone"><a href="" class="_oBox">手机版 <i class="navicon"></i>
+            <div id="qr_code">
+                <img src="picture/weixin.jpg" alt="">
+                <img src="picture/client.jpg" alt="">
+            </div>
+       
+        </div>
+
+    </div>
+<!-- ，，，，，，，，，，，，，，，，，，，，，，，，，顶部结束，，，，，，，，，，，，，，，，，，，， -->
+
+<div class="head_botom" style="height: 78px; margin:17px auto;width:1210px;">
+        <div class="head_botomL" style="width: auto;" id="fristPagelogoId">
+		
+        <a href="index.html" target="_self"><img src="picture/logo11_03.png" style="cursor: pointer;"></a>
+        </div>
+        <span class="shopping_cart_flag">购物车</span>
+        <div class="head_botomR" style="width: 640px; float: right; margin-left: 0px;">
+            <form name="searchForm" target="_blank" style="float: left;">
+
+
+                <input name="query" style="font-size: 12px;color: #bababa;width:360px;border: 2px solid #fd581e;" placeholder="搜索商品/店铺" class="text ac_input" type="text" id="query" size="45" maxlength="45">
+                <a href="javascript:void(0);" id="queryButton" class="button" style="background-color: #fd581e;font-weight:normal;width:80px;">
+                    <span class="icon"></span> 搜索
+                </a>
+            </form>
+            <div style="margin-left: 14px;width:100%;" id="hot_search_key_list"><a href="javascript:;">糖心苹果</a>
+                <a href="javascript:;">赣南脐橙</a></div>
+        </div>
+
+    </div>
+    <!-- 。。。。。。。。。。。。。。。。。。。。。。顶部搜索结束。。。。。。。。。。。。。。。。。。。。。 -->
+
+
+    <div id="content" style="min-height: 451px;">
+        <div id="con">
+            <!-- 购物车为空状态 -->
+            <div class="car-con" id="empty" style="display:none;">
+                <div class="cart-empty">
+                    <span class="title">您的购物车空空如也！</span>
+                </div>
+                <div class="Go-shoppig">
+                    <a href="shoplist.html" class="btn1 btn_gery" target="_blank">去逛逛吧</a>
+                </div>
+            </div>
+            <form action="" method="post" id="form_allstore">
+                <!--全部商品  -->
+                <div class="Cart_bar">
+                    <ul id="Gxyj-CartAll" class="Gxyj-CartAll">
+                        <li class="btn-switch-cart  current fl">
+                            <a href="javascript:void(0)"> <em>全部商品</em>
+                                <span class="num">1</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopCart_p_list_box">
+                    <div class="shopCart_p_list" style="margin:auto;border:0px;">
+                        <div class="cart-table-th">
+                            <div class="wp clear">
+                                <div class="fl th-chk">
+                                    <div id="Gxyj-SelectAll1" class="select-all Gxyj-SelectAll">
+                                        <div class="cart-checkbox">
+                                            <input id="Gxyj-SelectAllCbx1" type="checkbox" class="selall_cart">
+                                            <label for="Gxyj-SelectAllCbx1"> 全选</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fl th-item">
+                                    <div class="th td-inner ">商品</div>
+                                </div>
+                                <div class="fl th-info">
+                                    <div class="th-inner">&nbsp;规格</div>
+                                </div>
+
+                                <div class="fl th-price">
+                                    <div class="th-inner">&nbsp;单价</div>
+                                </div>
+                                <div class="fl th-amount">
+                                    <div class="td-inner">数量</div>
+                                </div>
+                                <div class="fl th-sum tac">
+                                    <div class="td-inner">小计</div>
+                                </div>
+                                <div class="fl th-op">
+                                    <div class="td-inner">操作</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-main">
+                            <div class="orderList">
+                                <div id="Gxyj-OrderCon" style="height:auto;">
+                                    <div id="Gxyj-Order" class="Gxyj-Order b_bottom">
+                                        <div class="Gxyj-OrderHeader clear">
+                                            <div class="shop-info">
+                                                <div class="cart-checkbox fl" style="margin-top:15px;">
+                                                    <input id="selall_010101_0" type="checkbox" class="checkedtso">
+                                                    <label for=""></label>
+                                                </div>
+                                                <div class="shop-name-All fl" id="shop-name-All">
+                                                    <a class="quyu" href="" target="_blank">
+                                                        <span style="margin-right:10px;">黄山供销裕徽园特产专卖店</span>
+                                                    </a>
+                                                    <a class="zxkefu  grey ">
+                                                        <b></b><span style="color:#fcfcfc; line-height:inherit; margin-left:-8px;">和我联系</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-content ">
+                            </div>
+                        </div>
+                        <div class="sum-bar-container" style="display: block; position: relative; margin: 10px auto 50px;">
+                            <div class="sum-bar-bg"></div>
+                            <div class="sum-bar h clear">
+                                <ul class=" f14 fl">
+                                    <li class="Sum-Title fl">
+                                        <div class="Yh-zh clear">
+                                            <div class="Yh-zh-header">
+                                                <input type="checkbox" class="selall_cart" id="Yh-checkbox">
+                                                <label for="Yh-checkbox">全选</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="De-Pro fl">
+                                        <i></i> 删除选中商品
+                                    </li>
+                                    <li class="Mo-Pro fl">
+                                        <i></i> 移入关注
+                                    </li>
+                                    <li class="Mi-Pro fl">
+                                        <i></i> 清除失效产品
+                                    </li>
+                                    <li class="YX-Pro fl mr0">已选
+                                        <em id="cart_total">0</em> 件商品
+                                    </li>
+                                </ul>
+                                <div class="All-Money fl">
+                                    <div class="fr">
+                                        <p class="All-M mt-12 lin-60">
+                                            <em>¥</em><em id="cart_totalPay" class="">0.00</em>
+                                        </p>
+                                        <p class="All-J">已节省 ¥<span id="cart_totalPayDec">0.00</span></p>
+                                    </div>
+                                    <div class="fr tac" style="padding: 11px;">
+                                        <span>总价</span>
+                                        <br>
+                                        <span class="f12">（不含运费）</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="Go-J-Btn fr no-cur" id="cart_submit" href="javascript:void(0)">
+						                <i></i>去结算
+					                </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--店铺  -->
+
+                <!-- 店铺产品内容 -->
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 购物车结束 -->
+
+
+
+
+
+
+
+
+    <!-- ，，，，，，，，，，，，，，，，，，，，，，，底部开始，，，，，，，，，，，，，，，，，，，，，， -->
+    <div class="ifooter">
+        <div class="helper clear">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>供销业务</dt>
+                        <dd><a href="" target="view_frame">供销e通</a></dd>
+                        <dd><a href="" target="view_frame">供销e批</a></dd>
+                        <dd><a href="" target="view_frame">农资农服</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>新手上路</dt>
+                        <dd><a href="" target="view_frame">初次到访</a></dd>
+                        <dd><a href="" target="view_frame">关于我们</a></dd>
+                        <dd><a href="" target="view_frame">友情链接</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd><a href="">购物流程</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd><a href="" target="view_frame">配送标准</a></dd>
+                        <dd><a href="" target="view_frame">签收验货</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>售后保障</dt>
+                        <dd><a href="" target="view_frame">发票制度</a></dd>
+                        <dd><a href="" target="view_frame">退换货流程</a></dd>
+                        <dd><a href="" target="view_frame">退换货规则</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>商家入驻</dt>
+                        <dd><a href="" target="view_frame">地方平台搭建</a></dd>
+                        <dd><a href="" target="view_frame">商户入驻</a></dd>
+                        <dd><a href="" target="view_frame">禁售商品规则</a></dd>
+                        <dd><a href="" target="view_frame">入驻流程</a></dd>
+                        <dd><a href="" target="view_frame">入驻须知</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="gxcoop">
+                <a href=""> <img src="picture/gxcoop.png" alt=""></a>
+            </div>
+            <ul class="wx_col">
+                <li class="clear">
+                    <h4>微信公众平台</h4>
+                    <p>
+                        <a href=""> <img src="picture/wx-bg1-index.png" width="108" height="108"></a>
+                    </p>
+                </li>
+                <li class="clear">
+                    <h4 class="text-middle">下载客户端</h4>
+                    <p>
+                        <a href=""> <img src="picture/wx-bg2-index.png" width="108" height="108"></a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright" style="margin:0 auto;">
+            <span>版权所有 供销e家&nbsp;|&nbsp;京ICP备15050565号&nbsp;|&nbsp;<a href="" target="_blank"><img src="picture/footerFlag.png" style="vertical-align: middle;">京公网安备11011202000858号</a>&nbsp;|&nbsp;<a href="http://www.gxyj.com/active/ynzzpc/blic.html?mallId=00000000" target="_blank">经营执照</a>&nbsp;|&nbsp;京ICP证151138号</span>
+        </div>
+        <div class="copybox">
+            <div class="copyimg">
+                <a id="_pingansec_bottomimagesmall_brand" href="" target="_blank"> <img src="picture/110×40.jpg"> </a>
+                <a href="" target="_blank"> <img src="picture/110×40-1.jpg"> </a>
+                <a href="" target="_blank"> <img src="picture/110×40-2.jpg"> </a>
+                <a href="" target="_blank"> <img src="picture/cert (1).png"> </a>
+                <a id="___szfw_logo___" href="" target="_blank"><img src="picture/cnnic.png" style="widht:110px;height:40px;" border="0"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="js/jquery-3.3.1.js "></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/user.1.js"></script>
+<script src="js/same.1.js"></script>
+<script src="js/shopcar.js"></script>
+
+</html>

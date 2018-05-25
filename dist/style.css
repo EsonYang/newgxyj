@@ -1,0 +1,9 @@
+.cent {
+  width: 100%;
+  margin: 0 auto; }
+  .cent div {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto; }
+    .cent div img {
+      width: 100%; }
